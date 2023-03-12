@@ -55,4 +55,21 @@ void createReport() {
   }
 }
 
+void deleteReport() {
+  std::string fileName;
+  int num;
+  std::cout << "Enter report file name to delete: ";
+  std::cin >> num;
+
+  fileName = ("./Employees/" + std::to_string(num) + ".txt");
+
+  int result = std::remove(reinterpret_cast<char *>(&fileName));
+  if (result == 0) {
+    std::cout << "File deleted successfully!" << std::endl;
+  }
+  else {
+    std::cout << "Error: Unable to delete file." << std::endl;
+  }
+}
+
 #endif //OS_LAB1__REPORTER_H_
