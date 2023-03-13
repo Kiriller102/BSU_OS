@@ -36,6 +36,10 @@ Employee createNewEmployee() {
   }
   std::cout << "Enter employee hours worked: ";
   std::cin >> hours;
+  while(hours < 0) {
+    std::cout << "Incorrect input try again: ";
+    std::cin >> hours;
+  }
 
   return {num, reinterpret_cast<char *>(&name), hours};
 }
@@ -70,7 +74,7 @@ void createFile() {
 void deleteEmployee() {
   std::string fileName;
   int num;
-  std::cout << "employee identification number to delete: ";
+  std::cout << "Enter binary file name to delete: ";
   std::cin >> num;
 
   fileName = ("./Employees/" + std::to_string(num) + ".bin");
