@@ -2,6 +2,58 @@
 	"entries" : 
 	[
 		{
+			"name" : "Boost_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Boost."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/lib/cmake/Boost-1.81.0"
+		},
+		{
+			"name" : "Boost_FILESYSTEM_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/opt/homebrew/lib/libboost_filesystem-mt.dylib"
+		},
+		{
+			"name" : "Boost_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/include"
+		},
+		{
+			"name" : "Boost_SYSTEM_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/opt/homebrew/lib/libboost_system-mt.dylib"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -55,7 +107,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kiriill/Desktop/OS_Lab1/cmake-build-debug"
+			"value" : "/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -506,6 +558,30 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_HAVE_LIBC_PTHREAD",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Test CMAKE_HAVE_LIBC_PTHREAD"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_HAVE_PTHREAD_H",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Have include pthread.h"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
 			"name" : "CMAKE_HOME_DIRECTORY",
 			"properties" : 
 			[
@@ -515,7 +591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kiriill/Desktop/OS_Lab1"
+			"value" : "/Users/kiriill/Desktop/OS_labs/OS_Lab1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -735,7 +811,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "13.0"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_OSX_SYSROOT",
@@ -747,7 +823,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk"
+			"value" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -795,7 +871,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "OS_Lab1"
+			"value" : "process_lab"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1078,7 +1154,107 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "OS_Lab1_BINARY_DIR",
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Boost"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/opt/homebrew/lib/cmake/Boost-1.81.0/BoostConfig.cmake][cfound components: filesystem system ][v1.81.0(1.81.0)]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_GTest",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding GTest"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/opt/homebrew/lib/cmake/GTest/GTestConfig.cmake][c ][v1.13.0()]"
+		},
+		{
+			"name" : "GTest_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for GTest."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/lib/cmake/GTest"
+		},
+		{
+			"name" : "boost_atomic_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_atomic."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/lib/cmake/boost_atomic-1.81.0"
+		},
+		{
+			"name" : "boost_filesystem_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_filesystem."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/lib/cmake/boost_filesystem-1.81.0"
+		},
+		{
+			"name" : "boost_headers_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_headers."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/lib/cmake/boost_headers-1.81.0"
+		},
+		{
+			"name" : "boost_system_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_system."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/lib/cmake/boost_system-1.81.0"
+		},
+		{
+			"name" : "process_lab_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1087,10 +1263,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kiriill/Desktop/OS_Lab1/cmake-build-debug"
+			"value" : "/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug"
 		},
 		{
-			"name" : "OS_Lab1_IS_TOP_LEVEL",
+			"name" : "process_lab_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1102,7 +1278,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "OS_Lab1_SOURCE_DIR",
+			"name" : "process_lab_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,7 +1287,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kiriill/Desktop/OS_Lab1"
+			"value" : "/Users/kiriill/Desktop/OS_labs/OS_Lab1"
 		}
 	],
 	"kind" : "cache",
