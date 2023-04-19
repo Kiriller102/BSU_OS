@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
   output_file = argv[2];
   pay_per_hour = atof(argv[3]);
 
-  std::string inDirPath = "binFiles";
+  std::string inDirPath = "../binFiles";
 
   std::ifstream ifs(inDirPath + "/" + input_file, std::ios::binary);
   if (!ifs) {
@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
     output_file += ".txt";
   }
 
-  std::string outDirPath = "reports";
+  std::string outDirPath = "../reports";
   if (access(outDirPath.c_str(), F_OK) == -1) {
     if (mkdir(outDirPath.c_str(), 0777) == -1) {
       std::cout << "Error creating directory " << outDirPath << std::endl;

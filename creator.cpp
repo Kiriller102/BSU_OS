@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
   std::string filename = argv[1];
   int num_records = atoi(argv[2]);
 
-  std::string dirpath = "binFiles";
+  std::string dirpath = "../binFiles";
   if (access(dirpath.c_str(), F_OK) == -1) {
     if (mkdir(dirpath.c_str(), 0777) == -1) {
       std::cout << "Error creating directory " << dirpath << std::endl;
