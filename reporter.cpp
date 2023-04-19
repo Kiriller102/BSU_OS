@@ -6,9 +6,6 @@
 #include <fstream>
 #include <unistd.h>
 #include <sys/stat.h>
-//#include <boost/program_options.hpp>
-//
-//namespace po = boost::program_options;
 
 struct employee {
   int num;
