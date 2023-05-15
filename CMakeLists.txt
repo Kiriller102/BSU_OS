@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package(Boost 1.81.0 REQUIRED COMPONENTS filesystem system)
-#find_package(GTest REQUIRED)
 
 include_directories(${Boost_INCLUDE_DIRS})
 
@@ -14,10 +13,10 @@ add_executable(main main.cpp)
 add_dependencies(main reporter creator)
 target_link_libraries(main ${Boost_LIBRARIES})
 
-add_executable(creator creator.cpp)
+add_executable(creator creator.cpp Employee.h)
 target_link_libraries(creator ${Boost_LIBRARIES})
 
-add_executable(reporter reporter.cpp)
+add_executable(reporter reporter.cpp Employee.h)
 target_link_libraries(reporter ${Boost_LIBRARIES})
 
 add_custom_target(clean_all

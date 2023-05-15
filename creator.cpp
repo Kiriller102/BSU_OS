@@ -7,16 +7,9 @@
 #include <string>
 #include <unistd.h>
 #include <sys/stat.h>
+#include "Employee.h"
 
-struct employee
-{
-  int num;
-  char name[10];
-  double hours;
-};
-
-int main(int argc, char* argv[])
-{
+int main(int argc, char *argv[]) {
   if (argc < 3) {
     std::cout << "Usage: Creator <filename> <num_records>" << std::endl;
     return 1;
@@ -41,7 +34,7 @@ int main(int argc, char* argv[])
 
   employee emp{};
   for (int i = 0; i < num_records; i++) {
-    std::cout << "Record " << i+1 << std::endl;
+    std::cout << "Record " << i + 1 << std::endl;
 
     std::cout << "Enter employee number: \r";
     std::cin >> emp.num;
@@ -52,7 +45,7 @@ int main(int argc, char* argv[])
     std::cout << "Enter hours worked: \r";
     std::cin >> emp.hours;
 
-    outfile.write((char*)&emp, sizeof(emp));
+    outfile.write((char *) &emp, sizeof(emp));
   }
 
   outfile.close();

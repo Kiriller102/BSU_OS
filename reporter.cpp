@@ -6,12 +6,7 @@
 #include <fstream>
 #include <unistd.h>
 #include <sys/stat.h>
-
-struct employee {
-  int num;
-  char name[10];
-  double hours;
-};
+#include "Employee.h"
 
 int main(int argc, char *argv[]) {
   std::string input_file, output_file;
@@ -54,7 +49,7 @@ int main(int argc, char *argv[]) {
   }
 
   int count = 0;
-  employee e{};
+  employee e;
   while (ifs.read((char *) &e, sizeof(e))) {
     double salary = e.hours * pay_per_hour;
     ofs << e.num << " " << e.name << " " << e.hours << " " << salary
