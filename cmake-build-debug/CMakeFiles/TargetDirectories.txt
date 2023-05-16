@@ -1,7 +1,0 @@
-/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug/CMakeFiles/creator.dir
-/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug/CMakeFiles/main.dir
-/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug/CMakeFiles/clean_all.dir
-/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug/CMakeFiles/reporter.dir
-/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/kiriill/Desktop/OS_labs/OS_Lab1/cmake-build-debug/CMakeFiles/tests.dir
