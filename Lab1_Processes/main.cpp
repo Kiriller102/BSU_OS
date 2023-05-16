@@ -57,14 +57,3 @@ int main() {
 
   return 0;
 }
-
-//int main() {
-//  std::string str;
-//  int num;
-//  std::cin >> str;
-//  std::cin >> num;
-//  for (int i = 0; i < num; i++) {
-//    std::cout << str;
-//  }
-//  std::cout << std::endl;
-//}
