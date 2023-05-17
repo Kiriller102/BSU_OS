@@ -47,5 +47,5 @@ python -m unittest
 
 Make sure you have the necessary dependencies installed before running the tests.
 
----
-*Note: This is a simplified example for educational purposes and may not cover all possible scenarios or production-level considerations.*
+ ## Contributors
+- [Zavadsky Kirill](https://github.com/Kiriller102)
